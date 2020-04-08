@@ -24,7 +24,6 @@ $shell $MAKE
 
 echo "Installing"
 
-# Ignore errors here, as it won't be able to create some dirs
-$shell $MAKE install || true
+$shell sudo $MAKE install
 
 echo "Success!"
